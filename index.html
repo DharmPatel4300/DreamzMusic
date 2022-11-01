@@ -1,16 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Static Template</title>
-  </head>
 
-  <body>
-    
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <title>Static Template</title>
 
-  <script src="script.js"></script>
+  <!-- Iconsout cdn -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+  <!-- swiper js used for slider -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+  <!-- costom css -->
+  <link rel="stylesheet" href="styles.css" />
+  
+</head>
+
+<body>
+  <!-- navigation starts -->
+  <nav>
+    <div class="container nav__container">
+      <a href="index.html" class="logo__image">
+        <img src="images/Music-logo.png">
+        <div class="logo_info">
+          <h4>Dreamz</h4>
+          <p>Music</p>
+        </div>
+      </a>
+
+      <div class="nav__playlist">
+        <p>favorites</p>
+      </div>
+
+      <ul class="nav__menu">
+
+        <form class="search__form">
+          <input type="search" placeholder="Search here">
+          <div class="search__icon">
+            <i class="uil uil-search"></i>
+          </div>
+          <div class="search__icon-voice">
+            <i class="uil uil-microphone"></i>
+          </div>
+        </form>
+
+        <div class="nav__notification">
+            <i class="uil uil-bell"></i>
+        </div>
+
+        <div href="index.html" class="user__image">
+          <img src="images/user.jpg">
+        </div>
+
+      </ul>
+      <button class="open-menu-btn">
+        <i class="uil uil-list-ul"></i>
+      </button>
+      <button class="close-menu-btn">
+        <i class="uil uil-multiply"></i>
+      </button>
+    </div>
+  </nav>
+  <!-- navigation ends -->
+
+
+</body>
+
+<script src="script.js"></script>
+
 </html>
