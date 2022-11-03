@@ -243,14 +243,15 @@ nav button {
   transform: scale(1.2); 
 }
 
-/* .latest__release-cards{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap:1rem;
-} */
+.latest__release{
+  margin-top: 2rem;
+}
+
+.latest__release-cards{
+  margin-top: 1rem;
+}
 
 .release-card{
-  width: 100%;
   display: grid;
   grid-template-columns: 1fr 3fr 0.5fr;
   align-items: center;
