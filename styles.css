@@ -243,10 +243,16 @@ nav button {
   transform: scale(1.2); 
 }
 
+/* .latest__release-cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:1rem;
+} */
+
 .release-card{
   width: 100%;
   display: grid;
-  grid-template-columns: .8fr 3fr 0.5fr;
+  grid-template-columns: 1fr 3fr 0.5fr;
   align-items: center;
 }
 
@@ -255,17 +261,21 @@ nav button {
   height: 100%;
 }
 
-release__song-title{
-  margin-left: 2rem;
+.release__song-title{
+  margin-left: 1.8rem;
 }
 
  
-.queue__song-info h4 {
+.release__song-title h4 {
   font-size: 1.1rem;
 }
 
-.queue__song-info p{
+.release__song-title p{
   font-size:.85rem;
+}
+
+.release__song-details {
+  font-size: .8rem;
 }
 
 
