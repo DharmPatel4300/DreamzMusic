@@ -33,7 +33,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background: var(--color-bg);
+  background: var(--color-bg1);
   color: var(--color-white);
   line-height: 1.7;
 }
@@ -44,7 +44,7 @@ body {
 }
 
 section {
-  padding: 1rem 0 5rem;
+  padding-top: 1rem;
 }
 
 
@@ -181,13 +181,14 @@ nav {
 input {
   width: 100%;
   padding: .6rem 1rem .6rem 3rem;
-  background: var(--color-bg1);
+  background: var(--color-bg);
   color: var(--color-white);
   border-radius: .5rem;
 }
 
 .search__form{
   position: relative;
+  width: 26rem;
 }
 
 .search__icon{
@@ -304,6 +305,14 @@ nav button {
   position: relative;
 }
 
+.artist-card{
+  text-align: center;
+}
+
+.artist-card h5{
+  font-weight: 300;
+  margin-top: 10px;
+}
 
 
 .play__icon{
@@ -371,7 +380,7 @@ nav button {
 }
 
 .mood{
-  margin: 2rem 0;
+  margin: 2rem 0 0;
   
 }
 
@@ -397,6 +406,18 @@ nav button {
   transition: var(--transition);
 }
 
+.english-cards, .hindi-cards{
+  margin-top: 1rem;
+}
+
+.english-card h5, .hindi-card h5{
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+.english-card p, .hindi-card p{
+  font-size: .7rem;
+}
 
 
 
@@ -456,4 +477,52 @@ nav button {
   font-size:.85rem;
 }
 
+/* ========= Main-Right  Ends========= */
+
+
+/* ========= Footer-Player  Starts========= */
+footer{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 100vw;
+    height: 8rem;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    z-index: 11;
+    overflow: hidden;
+}
+
+.icons{
+    margin-top: 14px; 
+}
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 80vw; 
+    cursor: pointer;
+}
+
+.timestamp{
+    margin: 0 23px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    top:4rem;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+
+
+/* ========= Footer-Player  Ends ========= */
 
