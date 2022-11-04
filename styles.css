@@ -44,7 +44,7 @@ body {
 }
 
 section {
-  padding: 3rem 0;
+  padding: 1rem 0 5rem;
 }
 
 
@@ -62,7 +62,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 h3 {
@@ -233,9 +233,20 @@ nav button {
 .main__left{
   padding-right: 2rem;
   width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+
+   /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
-.main_slide-image:hover{
+/* Hide scrollbar for Chrome, Safari and Opera */
+.main__left::-webkit-scrollbar {
+  display: none;
+}
+
+.main_slide-image{
   transition: var(--transition);
 }
 
@@ -243,7 +254,7 @@ nav button {
   transform: scale(1.2); 
 }
 
-.latest__release{
+.main__left h2{
   margin-top: 2rem;
 }
 
@@ -253,7 +264,7 @@ nav button {
 
 .release-card{
   display: grid;
-  grid-template-columns: 1fr 3fr 0.5fr;
+  grid-template-columns: .9fr 3fr 0.8fr;
   align-items: center;
 }
 
@@ -263,21 +274,61 @@ nav button {
 }
 
 .release__song-title{
-  margin-left: 1.8rem;
+  margin-left: 1.5rem;
 }
 
  
 .release__song-title h4 {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .release__song-title p{
-  font-size:.85rem;
+  font-size:.8rem;
 }
 
 .release__song-details {
-  font-size: .8rem;
+  font-size: .75rem;
 }
+
+
+
+.artist__image{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 1rem;
+  position: relative;
+}
+
+
+
+.play__icon{
+  display: none;
+  transition: var(--transition);
+  position: absolute;
+  top:0;
+  left: 25%;
+  font-size: 4rem;
+  color: var(--color-danger);
+}
+
+.play__icon img{
+  height: 50%;
+  width: 50%;
+  color: #f75842;
+}
+
+.artist__image:hover .play__icon{
+  display: block;
+
+}
+
+.artist__image:hover{
+  opacity: .7;
+  transform: scale(.9);
+}
+
 
 
 
@@ -346,3 +397,5 @@ nav button {
 .queue__song-info p{
   font-size:.85rem;
 }
+
+
