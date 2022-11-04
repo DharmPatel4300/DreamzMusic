@@ -370,6 +370,34 @@ nav button {
   transform: scale(1.1);
 }
 
+.mood{
+  margin: 2rem 0;
+  
+}
+
+.mood_slide-image{
+  position: relative;
+}
+
+.mood_slide-image img{
+  opacity: .5;
+  
+}
+
+.mood_slide-image p{
+  position: absolute;
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: center;
+  top:35%;
+}
+
+.mood_slide-image:hover img{
+  transform: scale3d(0,0, .9);
+  transition: var(--transition);
+}
+
+
 
 
 

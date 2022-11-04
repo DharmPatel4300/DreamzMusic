@@ -80,5 +80,18 @@ var swiper4 = new Swiper(".mySwiper4", {
     },
 });
 
+var swiper5 = new Swiper(".mySwiper5", {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
 
 
