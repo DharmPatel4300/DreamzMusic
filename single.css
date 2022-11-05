@@ -250,26 +250,51 @@ nav button {
     overflow-y: scroll;
 }
 
-.main_slide-image {
-    transition: var(--transition);
-}
+/* main__song */
 
-.main_slide-image:hover {
-    transform: scale(1.2);
-}
-
-.main__left h2 {
-    margin-top: 2rem;
-}
-
-.latest__release-cards {
-    margin-top: 1rem;
-}
-
-.release-card {
+.main__song{
     display: grid;
-    grid-template-columns: .9fr 3fr 0.8fr;
+    grid-template-columns: 40% 60%;
+    background: var(--color-bg2);
+    box-shadow: 0 3rem 3rem rgb(0 0 0 / 30%);
+    position: relative;
+    top:0;
+}
+
+.main__song-info{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.main__song-actions{
+    display: flex;
+}
+
+.main__song-artist{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.main__song-details p{
+    line-height: 1.4;
+    font-size: 1rem;
+}
+.main__song-play p{
+    font-size: .85rem;
+    padding: 3px 0;
+}
+
+.playlist__tracks{
+    margin-top: 1.5rem;
+}
+
+.playlist__track-card {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr 1fr;
     align-items: center;
+    background: var(--color-bg);
 }
 
 .release__image {
@@ -277,20 +302,20 @@ nav button {
     height: 100%;
 }
 
-.release__song-title {
+.playlist__track-title {
     margin-left: 1.5rem;
 }
 
 
-.release__song-title h4 {
+.playlist__track-title h4 {
     font-size: 1rem;
 }
 
-.release__song-title p {
+.playlist__track-title p {
     font-size: .8rem;
 }
 
-.release__song-details {
+.playlist__track-details {
     font-size: .75rem;
 }
 
