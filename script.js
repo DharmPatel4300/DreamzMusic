@@ -1,35 +1,23 @@
-const navbar = document.querySelector('nav');
-const nav_menu = document.querySelector('.nav__menu');
-const nav_btn = document.querySelector('.open-menu-btn');
-const nav_close_btn = document.querySelector('.close-menu-btn');
+
+const playlist = document.querySelector('.playlist');
+const right = document.querySelector('.main__right');
 
 
-//changing nav-bar on scrolling
-window.addEventListener('scroll', () => {
-    navbar.classList.toggle('window-scroll', window.scrollY > 0)
-})
+// open-close playlist Queue
+playlist.onclick = function () {
+    if (right.style.display === "block"){
+        right.style.display = "none";
+    }else{
+        right.style.display = "block";
+    }
+}
 
 
-//opening/hide nav-menu
-nav_btn.addEventListener("click", (e) => {
-    e.preventDefault();
-    nav_menu.style.display = "flex";
-    nav_btn.style.display = "none";
-    nav_close_btn.style.display = "block";
-});
-
-
-nav_close_btn.addEventListener("click", (e) => {
-    e.preventDefault();
-    nav_menu.style.display = "none";
-    nav_btn.style.display = "block";
-    nav_close_btn.style.display = "none";
-});
 
 //  ========== Initialize Swiper ===========
 
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 2,
+    slidesPerView: 1,
     spaceBetween: 20,
     pagination: {
         el: ".swiper-pagination",
@@ -39,10 +27,17 @@ var swiper = new Swiper(".mySwiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+
+    // Resposive meadia
+    breakpoints: {
+        1080: {
+            slidesPerView: 2,
+        },
+    },
 });
 
 var swiper2 = new Swiper(".mySwiper2", {
-    slidesPerView: 2,
+    slidesPerView: 1,
     spaceBetween: 15,
     pagination: {
         el: ".swiper-pagination",
@@ -52,10 +47,19 @@ var swiper2 = new Swiper(".mySwiper2", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    // Resposive meadia
+    breakpoints: {
+        1080: {
+            slidesPerView: 2,
+        },
+        600: {
+            slidesPerView: 2,
+        },
+    },
 });
 
 var swiper3 = new Swiper(".mySwiper3", {
-    slidesPerView: 7,
+    slidesPerView: 3,
     spaceBetween: 10,
     pagination: {
         el: ".swiper-pagination",
@@ -65,22 +69,18 @@ var swiper3 = new Swiper(".mySwiper3", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    // Resposive meadia
+    breakpoints: {
+        1080: {
+            slidesPerView: 7,
+        },
+        600: {
+            slidesPerView: 5,
+        },
+    },
 });
 
 var swiper4 = new Swiper(".mySwiper4", {
-    slidesPerView: 9,
-    spaceBetween: 20,
-    pagination: {
-        el: ".swiper-pagination",
-        type: "progressbar",
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-});
-
-var swiper5 = new Swiper(".mySwiper5", {
     slidesPerView: 3,
     spaceBetween: 20,
     pagination: {
@@ -90,6 +90,38 @@ var swiper5 = new Swiper(".mySwiper5", {
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+    },
+
+    // Resposive meadia
+    breakpoints: {
+        1080: {
+            slidesPerView: 9,
+        },
+        600: {
+            slidesPerView: 7,
+        },
+    },
+});
+
+var swiper5 = new Swiper(".mySwiper5", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    // Resposive meadia
+    breakpoints: {
+        1080: {
+            slidesPerView: 3,
+        },
+        600: {
+            slidesPerView: 2,
+        },
     },
 });
 
