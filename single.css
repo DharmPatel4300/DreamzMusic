@@ -295,12 +295,10 @@ nav button {
     grid-template-columns: 1fr 6fr 1fr 1fr;
     align-items: center;
     background: var(--color-bg);
+    margin-bottom: 1rem;
 }
 
-.release__image {
-    width: 100%;
-    height: 100%;
-}
+
 
 .playlist__track-title {
     margin-left: 1.5rem;
@@ -326,7 +324,17 @@ nav button {
 
 /* ========= Main-Right  Starts========= */
 
-.main__right {
+.main__right{
+    position: relative;
+    top: 0;
+    height: 100%;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.queue {
     position: relative;
     width: 100%;
     height: 100%;
@@ -483,20 +491,20 @@ footer {
         margin-top: 1.5rem;
     }
 
-    .latest__release-cards {
+    .playlist__tracks {
         margin-top: .9rem;
     }
 
-    .release__song-title {
+    .playlist__track-title {
         margin-left: 1.1rem;
     }
 
 
-    .release__song-title h4 {
+    .playlist__track-title h4 {
         font-size: .9rem;
     }
 
-    .release__song-title p {
+    .playlist__track-title p {
         font-size: .7rem;
     }
 
