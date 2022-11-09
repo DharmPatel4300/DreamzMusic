@@ -1,20 +1,1524 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Static Template</title>
-  </head>
 
-  <body>
-    <h1>Welcome Ninja!!</h1>
-    <h3>Write your code here!</h3>
-    <h3>A CSS and JS file has been created and linked for you already.</h3>
-    <h3>Feel free to change the directory structure to your liking.</h3>
-    <h3>Do not delete any .json file from CodeSandbox</h3>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
+  <title>Static Template</title>
+
+  <!-- Iconsout cdn -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+  <!-- swiper js used for slider -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+  <!-- costom css -->
+  <link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body>
+  <!-- navigation starts -->
+  <nav>
+    <div class="container nav__container">
+      <a href="index.html" class="logo__image">
+        <img src="images/Music-logo.png">
+        <div class="logo_info">
+          <h4>Dreamz</h4>
+          <p>Music</p>
+        </div>
+      </a>
+
+      <div class="nav__playlist">
+        <button class="playlist btn btn-primary">Playlist</button>
+      </div>
+
+      <ul class="nav__menu">
+
+        <form class="search__form">
+          <input type="search" placeholder="Search here">
+          <div class="search__icon">
+            <i class="uil uil-search"></i>
+          </div>
+          <div class="search__icon-voice">
+            <i class="uil uil-microphone"></i>
+          </div>
+        </form>
+
+        <div class="nav__notification">
+          <i class="uil uil-bell"></i>
+        </div>
+
+        <div href="index.html" class="user__image">
+          <img src="images/user.jpg">
+        </div>
+
+      </ul>
+      <button class="open-menu-btn">
+        <i class="uil uil-list-ul"></i>
+      </button>
+      <button class="close-menu-btn">
+        <i class="uil uil-multiply"></i>
+      </button>
+    </div>
+  </nav>
+  <!-- navigation ends -->
+
+
+  <!-- Main Starts -->
+  <section class="container main__container">
+
+    <main class="main__left scroll__hide">
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide main_slide-image">
+            <img src="https://a10.gaanacdn.com/gn_img/showcase/qaLKY23pO4/qaLKYowWpO/size_l_1658294601.webp">
+          </div>
+
+          <div class="swiper-slide main_slide-image">
+            <img src="https://a10.gaanacdn.com/gn_img/showcase/jBr3gLyWR1/Br3gm5QbR1/size_l_1662536030.webp">
+          </div>
+
+          <div class="swiper-slide main_slide-image">
+            <img src="https://a10.gaanacdn.com/gn_img/showcase/MmqK5EKwRO/MmqK5XXbwR/size_l_1663939695.webp">
+          </div>
+
+          <div class="swiper-slide main_slide-image">
+            <img src="https://a10.gaanacdn.com/gn_img/showcase/a7LWBkzbzX/7LWBBRDWzX/size_l_1657699648.webp">
+          </div>
+
+          <div class="swiper-slide main_slide-image">
+            <img src="https://a10.gaanacdn.com/gn_img/showcase/a7LWBkzbzX/a7LWBNjWzX/size_l_1662373779.webp">
+          </div>
+
+          <div class="swiper-slide main_slide-image">
+            <img src="https://a10.gaanacdn.com/gn_img/showcase/qaLKY23pO4/qaLKYowWpO/size_l_1658294601.webp">
+          </div>
+
+          <div class="swiper-slide main_slide-image">
+            <img src="https://a10.gaanacdn.com/gn_img/showcase/jBr3gLyWR1/Br3gm5QbR1/size_l_1662536030.webp">
+          </div>
+
+          <div class="swiper-slide main_slide-image">
+            <img src="https://a10.gaanacdn.com/gn_img/showcase/MmqK5EKwRO/MmqK5XXbwR/size_l_1663939695.webp">
+          </div>
+
+          <div class="swiper-slide main_slide-image">
+            <img src="https://a10.gaanacdn.com/gn_img/showcase/a7LWBkzbzX/7LWBBRDWzX/size_l_1657699648.webp">
+          </div>
+
+          <div class="swiper-slide main_slide-image">
+            <img src="https://a10.gaanacdn.com/gn_img/showcase/a7LWBkzbzX/a7LWBNjWzX/size_l_1662373779.webp">
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="latest__release swiper mySwiper2">
+
+        <div class="latest__release-heading">
+          <h2>Latest Release</h2>
+        </div>
+
+        <div class="latest__release-cards swiper-wrapper">
+
+          <div class="release-card swiper-slide">
+            <div class="release__image">
+              <img src="https://a10.gaanacdn.com/gn_img/albums/10q3ZR1352/0q3ZoNg0W5/size_m.webp">
+            </div>
+            <div class="release__song-title">
+              <h4>Sugar & Brownies</h4>
+              <p>Sugar & Brownies</p>
+            </div>
+            <div class="release__song-details">
+              <div class="release__song-rating">
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-heart"></i>
+              </div>
+              <div class="release__song-duration">
+                <p>4:45</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="release-card swiper-slide">
+            <div class="release__image">
+              <img src="https://a10.gaanacdn.com/gn_img/albums/10q3ZR1352/0q3ZoNg0W5/size_m.webp">
+            </div>
+            <div class="release__song-title">
+              <h4>Sugar & Brownies</h4>
+              <p>Sugar & Brownies</p>
+            </div>
+            <div class="release__song-details">
+              <div class="release__song-rating">
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-heart"></i>
+              </div>
+              <div class="release__song-duration">
+                <p>4:45</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="release-card swiper-slide">
+            <div class="release__image">
+              <img src="https://a10.gaanacdn.com/gn_img/albums/10q3ZR1352/0q3ZoNg0W5/size_m.webp">
+            </div>
+            <div class="release__song-title">
+              <h4>Sugar & Brownies</h4>
+              <p>Sugar & Brownies</p>
+            </div>
+            <div class="release__song-details">
+              <div class="release__song-rating">
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-heart"></i>
+              </div>
+              <div class="release__song-duration">
+                <p>4:45</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="release-card swiper-slide">
+            <div class="release__image">
+              <img src="https://a10.gaanacdn.com/gn_img/albums/10q3ZR1352/0q3ZoNg0W5/size_m.webp">
+            </div>
+            <div class="release__song-title">
+              <h4>Sugar & Brownies</h4>
+              <p>Sugar & Brownies</p>
+            </div>
+            <div class="release__song-details">
+              <div class="release__song-rating">
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-heart"></i>
+              </div>
+              <div class="release__song-duration">
+                <p>4:45</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="release-card swiper-slide">
+            <div class="release__image">
+              <img src="https://a10.gaanacdn.com/gn_img/albums/10q3ZR1352/0q3ZoNg0W5/size_m.webp">
+            </div>
+            <div class="release__song-title">
+              <h4>Sugar & Brownies</h4>
+              <p>Sugar & Brownies</p>
+            </div>
+            <div class="release__song-details">
+              <div class="release__song-rating">
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-heart"></i>
+              </div>
+              <div class="release__song-duration">
+                <p>4:45</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="release-card swiper-slide">
+            <div class="release__image">
+              <img src="https://a10.gaanacdn.com/gn_img/albums/10q3ZR1352/0q3ZoNg0W5/size_m.webp">
+            </div>
+            <div class="release__song-title">
+              <h4>Sugar & Brownies</h4>
+              <p>Sugar & Brownies</p>
+            </div>
+            <div class="release__song-details">
+              <div class="release__song-rating">
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-heart"></i>
+              </div>
+              <div class="release__song-duration">
+                <p>4:45</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="release-card swiper-slide">
+            <div class="release__image">
+              <img src="https://a10.gaanacdn.com/gn_img/albums/10q3ZR1352/0q3ZoNg0W5/size_m.webp">
+            </div>
+            <div class="release__song-title">
+              <h4>Sugar & Brownies</h4>
+              <p>Sugar & Brownies</p>
+            </div>
+            <div class="release__song-details">
+              <div class="release__song-rating">
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-heart"></i>
+              </div>
+              <div class="release__song-duration">
+                <p>4:45</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="release-card swiper-slide">
+            <div class="release__image">
+              <img src="https://a10.gaanacdn.com/gn_img/albums/10q3ZR1352/0q3ZoNg0W5/size_m.webp">
+            </div>
+            <div class="release__song-title">
+              <h4>Sugar & Brownies</h4>
+              <p>Sugar & Brownies</p>
+            </div>
+            <div class="release__song-details">
+              <div class="release__song-rating">
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-heart"></i>
+              </div>
+              <div class="release__song-duration">
+                <p>4:45</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="latest__release swiper mySwiper2">
+
+        <div class="latest__release-cards swiper-wrapper">
+
+          <div class="release-card swiper-slide">
+            <div class="release__image">
+              <img src="https://a10.gaanacdn.com/gn_img/albums/10q3ZR1352/0q3ZoNg0W5/size_m.webp">
+            </div>
+            <div class="release__song-title">
+              <h4>Sugar & Brownies</h4>
+              <p>Sugar & Brownies</p>
+            </div>
+            <div class="release__song-details">
+              <div class="release__song-rating">
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-heart"></i>
+              </div>
+              <div class="release__song-duration">
+                <p>4:45</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="release-card swiper-slide">
+            <div class="release__image">
+              <img src="https://a10.gaanacdn.com/gn_img/albums/10q3ZR1352/0q3ZoNg0W5/size_m.webp">
+            </div>
+            <div class="release__song-title">
+              <h4>Sugar & Brownies</h4>
+              <p>Sugar & Brownies</p>
+            </div>
+            <div class="release__song-details">
+              <div class="release__song-rating">
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-heart"></i>
+              </div>
+              <div class="release__song-duration">
+                <p>4:45</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="release-card swiper-slide">
+            <div class="release__image">
+              <img src="https://a10.gaanacdn.com/gn_img/albums/10q3ZR1352/0q3ZoNg0W5/size_m.webp">
+            </div>
+            <div class="release__song-title">
+              <h4>Sugar & Brownies</h4>
+              <p>Sugar & Brownies</p>
+            </div>
+            <div class="release__song-details">
+              <div class="release__song-rating">
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-heart"></i>
+              </div>
+              <div class="release__song-duration">
+                <p>4:45</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="release-card swiper-slide">
+            <div class="release__image">
+              <img src="https://a10.gaanacdn.com/gn_img/albums/10q3ZR1352/0q3ZoNg0W5/size_m.webp">
+            </div>
+            <div class="release__song-title">
+              <h4>Sugar & Brownies</h4>
+              <p>Sugar & Brownies</p>
+            </div>
+            <div class="release__song-details">
+              <div class="release__song-rating">
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-heart"></i>
+              </div>
+              <div class="release__song-duration">
+                <p>4:45</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="release-card swiper-slide">
+            <div class="release__image">
+              <img src="https://a10.gaanacdn.com/gn_img/albums/10q3ZR1352/0q3ZoNg0W5/size_m.webp">
+            </div>
+            <div class="release__song-title">
+              <h4>Sugar & Brownies</h4>
+              <p>Sugar & Brownies</p>
+            </div>
+            <div class="release__song-details">
+              <div class="release__song-rating">
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-heart"></i>
+              </div>
+              <div class="release__song-duration">
+                <p>4:45</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="release-card swiper-slide">
+            <div class="release__image">
+              <img src="https://a10.gaanacdn.com/gn_img/albums/10q3ZR1352/0q3ZoNg0W5/size_m.webp">
+            </div>
+            <div class="release__song-title">
+              <h4>Sugar & Brownies</h4>
+              <p>Sugar & Brownies</p>
+            </div>
+            <div class="release__song-details">
+              <div class="release__song-rating">
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-heart"></i>
+              </div>
+              <div class="release__song-duration">
+                <p>4:45</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="release-card swiper-slide">
+            <div class="release__image">
+              <img src="https://a10.gaanacdn.com/gn_img/albums/10q3ZR1352/0q3ZoNg0W5/size_m.webp">
+            </div>
+            <div class="release__song-title">
+              <h4>Sugar & Brownies</h4>
+              <p>Sugar & Brownies</p>
+            </div>
+            <div class="release__song-details">
+              <div class="release__song-rating">
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-heart"></i>
+              </div>
+              <div class="release__song-duration">
+                <p>4:45</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="release-card swiper-slide">
+            <div class="release__image">
+              <img src="https://a10.gaanacdn.com/gn_img/albums/10q3ZR1352/0q3ZoNg0W5/size_m.webp">
+            </div>
+            <div class="release__song-title">
+              <h4>Sugar & Brownies</h4>
+              <p>Sugar & Brownies</p>
+            </div>
+            <div class="release__song-details">
+              <div class="release__song-rating">
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-heart"></i>
+                <i class="uil uil-heart"></i>
+              </div>
+              <div class="release__song-duration">
+                <p>4:45</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="popular__artists swiper mySwiper3">
+
+        <div class="popular__artists-heading">
+          <h2>Popular Artists</h2>
+        </div>
+
+        <div class="artists-cards swiper-wrapper">
+
+          <div class="artist-card swiper-slide">
+            <div class="artist__image">
+              <img src="https://a10.gaanacdn.com/gn_pl_img/playlists/9En3pqeWXD/n3pkoxO6KX/size_m_1652985105.webp">
+              <div class="play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            <h5>Neha Kakkar</h5>
+          </div>
+
+          <div class="artist-card swiper-slide">
+            <div class="artist__image">
+              <img src="https://a10.gaanacdn.com/gn_pl_img/playlists/D0PKLqr3Gl/0PKLjDk6WG/size_m_1655962311.webp">
+              <div class="play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            <h5>Ed-Sheeran</h5>
+          </div>
+
+          <div class="artist-card swiper-slide">
+            <div class="artist__image">
+              <img src="https://a10.gaanacdn.com/gn_pl_img/playlists/4Z9bqZoKyQ/9bqqJeOPby/size_m_1652464349.webp">
+              <div class="play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            <h5>Jubin Nautial</h5>
+          </div>
+
+          <div class="artist-card swiper-slide">
+            <div class="artist__image">
+              <img src="https://a10.gaanacdn.com/gn_pl_img/playlists/jBr3gybR1m/Br3gQB4NbR/size_m_1652464418.webp">
+              <div class="play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            <h5>A.R. Rahman</h5>
+          </div>
+
+          <div class="artist-card swiper-slide">
+            <div class="artist__image">
+              <img src="https://a10.gaanacdn.com/gn_pl_img/playlists/zLp36v3rGe/Lp36mQk0Kr/size_m_1652464449.webp">
+              <div class="play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            <h5>Arijit Singh</h5>
+          </div>
+
+          <div class="artist-card swiper-slide">
+            <div class="artist__image">
+              <img src="https://a10.gaanacdn.com/gn_pl_img/playlists/XYybzrb2gz/ybzzGEQ8b2/size_m_1657700451.webp">
+              <div class="play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            <h5>Siddhu Moosewala</h5>
+          </div>
+
+          <div class="artist-card swiper-slide">
+            <div class="artist__image">
+              <img src="https://a10.gaanacdn.com/gn_pl_img/playlists/BZgWoOW2d9/gWor8e4532/size_m_1657698603.webp">
+              <div class="play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            <h5>Karan Ahuja</h5>
+          </div>
+
+          <div class="artist-card swiper-slide">
+            <div class="artist__image">
+              <img src="https://a10.gaanacdn.com/gn_pl_img/playlists/qa4WEkqKP1/4WEgqZkxKP/size_m_1653676066.webp">
+              <div class="play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            <h5>Alan Walker</h5>
+          </div>
+
+          <div class="artist-card swiper-slide">
+            <div class="artist__image">
+              <img src="https://a10.gaanacdn.com/gn_pl_img/playlists/dwN39y83DP/N392Zrz5WD/size_m_1646726259.webp">
+              <div class="play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            <h5>Camila Cabellio</h5>
+          </div>
+
+          <div class="artist-card swiper-slide">
+            <div class="artist__image">
+              <img src="https://a10.gaanacdn.com/gn_pl_img/playlists/ZaP374RWDy/P37oYngR3D/size_m_1657699233.webp">
+              <div class="play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            <h5>Kaka</h5>
+          </div>
+
+        </div>
+
+
+      </div>
+
+      <div class="top__channels">
+        <div class="top__channels-heading">
+          <img src="images/channel.jpg" alt="Top Channels">
+        </div>
+
+        <div class="channels__images swiper mySwiper4">
+          <div class="swiper-wrapper">
+
+            <div class="channel__image swiper-slide">
+              <img src="https://a10.gaanacdn.com/gn_img/radiotheme/kGxbnw0Ky4/kGxbnxJ3y4/size_m_1643619321.webp">
+              <div class="channel-play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            
+            <div class="channel__image swiper-slide">
+              <img src="https://a10.gaanacdn.com/gn_img/radiotheme/qa4WEqWP1p/qa4WEm8WP1/size_m_1643616025.webp">
+              <div class="channel-play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            
+            <div class="channel__image swiper-slide">
+              <img src="https://a10.gaanacdn.com/gn_img/radiotheme/10q3ZR1352/10q3Zm2K52/size_m_1643619350.webp">
+              <div class="channel-play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            
+            <div class="channel__image swiper-slide">
+              <img src="https://a10.gaanacdn.com/gn_img/radiotheme/2lV3dl13Rg/2lV3dGZKRg/size_m_1643700040.webp">
+              <div class="channel-play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            
+            <div class="channel__image swiper-slide">
+              <img src="https://a10.gaanacdn.com/gn_img/radiotheme/4Z9bqo3yQn/4Z9bqmJbyQ/size_m_1643616085.webp">
+              <div class="channel-play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            
+            <div class="channel__image swiper-slide">
+              <img src="https://a10.gaanacdn.com/gn_img/radiotheme/R7vKXr6Wmr/R7vKX1v3mr/size_m_1643620128.webp">
+              <div class="channel-play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            
+            <div class="channel__image swiper-slide">
+              <img src="https://a10.gaanacdn.com/gn_img/radiotheme/ogNWkLDbmX/ogNWk7pWmX/size_m_1643700164.webp">
+              <div class="channel-play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            
+            <div class="channel__image swiper-slide">
+              <img src="https://a10.gaanacdn.com/gn_img/radiotheme/a7LWBaz3zX/a7LWBBDWzX/size_m_1643616137.webp">
+              <div class="channel-play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            
+            <div class="channel__image swiper-slide">
+              <img src="https://a10.gaanacdn.com/gn_img/radiotheme/Rz4W87v3xD/Rz4W8R6KxD/size_m_1643786917.webp">
+              <div class="channel-play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            
+            <div class="channel__image swiper-slide">
+              <img src="https://a10.gaanacdn.com/gn_img/radiotheme/g4w3vwrWjJ/g4w3vjj3jJ/size_m_1643700131.webp">
+              <div class="channel-play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            
+            <div class="channel__image swiper-slide">
+              <img src="https://a10.gaanacdn.com/gn_img/radiotheme/0wrb4kNWLg/0wrb4jV3Lg/size_m_1643615959.webp">
+              <div class="channel-play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            
+            <div class="channel__image swiper-slide">
+              <img src="https://a10.gaanacdn.com/gn_img/radiotheme/0wrb4kNWLg/0wrb4jV3Lg/size_m_1643615959.webp">
+              <div class="channel-play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            
+            <div class="channel__image swiper-slide">
+              <img src="https://a10.gaanacdn.com/gn_img/radiotheme/qa4WEqqWP1/qa4WEm5WP1/size_m_1643620021.webp">
+              <div class="channel-play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            
+            <div class="channel__image swiper-slide">
+              <img src="https://a10.gaanacdn.com/gn_img/radiotheme/qaLKY623pO/qaLKYgwWpO/size_m_1643694433.webp">
+              <div class="channel-play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mood swiper mySwiper5">
+        <div class="swiper-wrapper">
+      
+          <div class="swiper-slide mood_slide-image">
+            <img src="https://a10.gaanacdn.com/gn_img/showcase/qaLKY23pO4/qaLKYowWpO/size_l_1658294601.webp">
+            <p>Party</p>
+          </div>
+      
+          <div class="swiper-slide mood_slide-image">
+            <img src="https://a10.gaanacdn.com/gn_img/showcase/jBr3gLyWR1/Br3gm5QbR1/size_l_1662536030.webp">
+            <p>Mornig fresh</p>
+          </div>
+      
+          <div class="swiper-slide mood_slide-image">
+            <img src="https://a10.gaanacdn.com/gn_img/showcase/MmqK5EKwRO/MmqK5XXbwR/size_l_1663939695.webp">
+            <p>Romantic</p>
+          </div>
+      
+          <div class="swiper-slide mood_slide-image">
+            <img src="https://a10.gaanacdn.com/gn_img/showcase/a7LWBkzbzX/7LWBBRDWzX/size_l_1657699648.webp">
+            <p>Electric</p>
+          </div>
+      
+          <div class="swiper-slide mood_slide-image">
+            <img src="https://a10.gaanacdn.com/gn_img/showcase/a7LWBkzbzX/a7LWBNjWzX/size_l_1662373779.webp">
+            <p>Road Trip</p>
+          </div>
+      
+          <div class="swiper-slide mood_slide-image">
+            <img src="https://a10.gaanacdn.com/gn_img/showcase/qaLKY23pO4/qaLKYowWpO/size_l_1658294601.webp">
+            <p>Night Drive</p>
+          </div>
+      
+          <div class="swiper-slide mood_slide-image">
+            <img src="https://a10.gaanacdn.com/gn_img/showcase/jBr3gLyWR1/Br3gm5QbR1/size_l_1662536030.webp">
+            <p>Dance Club</p>
+          </div>
+      
+          <div class="swiper-slide mood_slide-image">
+            <img src="https://a10.gaanacdn.com/gn_img/showcase/MmqK5EKwRO/MmqK5XXbwR/size_l_1663939695.webp">
+            <p>Monsoon Hits</p>
+          </div>
+      
+          <div class="swiper-slide mood_slide-image">
+            <img src="https://a10.gaanacdn.com/gn_img/showcase/a7LWBkzbzX/7LWBBRDWzX/size_l_1657699648.webp">
+            <p>Chandni Bar</p>
+          </div>
+      
+          <div class="swiper-slide mood_slide-image">
+            <img src="https://a10.gaanacdn.com/gn_img/showcase/a7LWBkzbzX/a7LWBNjWzX/size_l_1662373779.webp">
+            <p>Mood Freshning</p>
+          </div>
+      
+        </div>
+      
+      </div>
+
+      <div class="english swiper mySwiper3">
+      
+        <div class="english-heading">
+          <h2>Latest English</h2>
+        </div>
+      
+        <div class="english-cards swiper-wrapper">
+      
+          <div class="english-card swiper-slide">
+            <div class="english__image">
+              <img src="https://a10.gaanacdn.com/gn_img/albums/81l3Mye3rM/l3MyEAyG3r/size_m.jpg">
+              <div class="play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            <h5>La La Love</h5>
+            <p>05-11-2021</p>
+          </div>
+
+          <div class="english-card swiper-slide">
+            <div class="english__image">
+              <img src="https://a10.gaanacdn.com/gn_img/albums/ZaP37RKDy7/aP37d5ZRWD/size_m_1589520146.jpg">
+              <div class="play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            <h5>Bella Ciao</h5>
+            <p>05-11-2021</p>
+          </div>
+
+          <div class="english-card swiper-slide">
+            <div class="english__image">
+              <img src="https://a10.gaanacdn.com/gn_img/albums/d41WjnWPLq/1WjznjZnWP/size_m.jpg">
+              <div class="play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            <h5>Car swift</h5>
+            <p>05-11-2021</p>
+          </div>
+
+          <div class="english-card swiper-slide">
+            <div class="english__image">
+              <img src="https://a10.gaanacdn.com/gn_img/albums/koMWQ7BKqL/MWQ7RBp8Kq/size_m.jpg">
+              <div class="play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            <h5>Heat Waves</h5>
+            <p>05-11-2021</p>
+          </div>
+
+          <div class="english-card swiper-slide">
+            <div class="english__image">
+              <img src="https://a10.gaanacdn.com/gn_img/albums/Oxd3xP3gVY/xd3xVR6Dbg/size_m.jpg">
+              <div class="play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            <h5>Sleeping Music</h5>
+            <p>05-11-2021</p>
+          </div>
+
+          <div class="english-card swiper-slide">
+            <div class="english__image">
+              <img src="https://a10.gaanacdn.com/gn_img/albums/oAJbDlbnL8/JbDENzOmKn/size_m.jpg">
+              <div class="play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            <h5>Faded</h5>
+            <p>05-11-2021</p>
+          </div>
+
+          <div class="english-card swiper-slide">
+            <div class="english__image">
+              <img src="https://a10.gaanacdn.com/gn_img/albums/qa4WEqWP1p/4WEkmVqMKP/size_m_1619420746.jpg">
+              <div class="play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            <h5>Bongo Cha Cha Cha</h5>
+            <p>05-11-2021</p>
+          </div>
+
+          <div class="english-card swiper-slide">
+            <div class="english__image">
+              <img src="https://a10.gaanacdn.com/gn_img/albums/ZaP37RKDy7/aP37JZmVKD/size_m.jpg">
+              <div class="play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            <h5>Bishfull Relaxsation</h5>
+            <p>05-11-2021</p>
+          </div>
+
+          <div class="english-card swiper-slide">
+            <div class="english__image">
+              <img src="https://a10.gaanacdn.com/gn_img/albums/z8k3y13rxo/k3yd0yOdKr/size_m.jpg">
+              <div class="play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            <h5>Calm Down</h5>
+            <p>05-11-2021</p>
+          </div>
+
+          <div class="english-card swiper-slide">
+            <div class="english__image">
+              <img src="https://a10.gaanacdn.com/gn_img/albums/4Z9bqo3yQn/Z9bqA9wMby/size_m_1604395732.jpg">
+              <div class="play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            <h5>Everybody Lost</h5>
+            <p>05-11-2021</p>
+          </div>
+
+          <div class="english-card swiper-slide">
+            <div class="english__image">
+              <img src="https://a10.gaanacdn.com/gn_img/albums/21GWwR3pkg/GWwrYJAe3p/size_m.jpg">
+              <div class="play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            <h5>Ai Sh...</h5>
+            <p>05-11-2021</p>
+          </div>
+
+          <div class="english-card swiper-slide">
+            <div class="english__image">
+              <img src="https://a10.gaanacdn.com/gn_img/albums/YoEWlabzXB/EWlwoNPg3z/size_m_1640156131.jpg">
+              <div class="play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            <h5>Affirmations</h5>
+            <p>05-11-2021</p>
+          </div>
+
+          <div class="english-card swiper-slide">
+            <div class="english__image">
+              <img src="https://a10.gaanacdn.com/gn_img/albums/z8k3yd1Krx/k3ydBwMnKr/size_m.jpg">
+              <div class="play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            <h5>Sunday Suspense</h5>
+            <p>05-11-2021</p>
+          </div>
+      
+          <div class="english-card swiper-slide">
+            <div class="english__image">
+              <img src="https://a10.gaanacdn.com/gn_img/albums/DwPKOBbqVZ/wPKOMA56Wq/size_m.jpg">
+              <div class="play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            <h5>Instrumental Cover-1</h5>
+            <p>05-11-2021</p>
+          </div>
+
+        </div>
+      
+      
+      </div>
+
+      <div class="hindi swiper mySwiper3">
+      
+        <div class="hindi-heading">
+          <h2>Latest Hindi</h2>
+        </div>
+      
+        <div class="hindi-cards swiper-wrapper">
+      
+          <div class="hindi-card swiper-slide">
+            <div class="hindi__image">
+              <img src="https://a10.gaanacdn.com/gn_img/song/lJvKa56KDV/vKa91Z1RKD/size_m_1628085090.webp">
+              <div class="play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            <h5>Raataan Lambiya</h5>
+            <p>10-05-2021</p>
+          </div>
+      
+          <div class="hindi-card swiper-slide">
+            <div class="hindi__image">
+              <img src="https://a10.gaanacdn.com/gn_img/song/10q3Zj1352/q3ZekVrAK5/size_m_1643005284.webp">
+              <div class="play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            <h5>Doobey</h5>
+            <p>10-05-2021</p>
+          </div>
+
+          <div class="hindi-card swiper-slide">
+            <div class="hindi__image">
+              <img src="https://a10.gaanacdn.com/gn_img/song/7rVW1Rbk56/VW1L7Rxg3k/size_m_1628958702.webp">
+              <div class="play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            <h5>Mann Bhareya</h5>
+            <p></p>
+          </div>
+
+          <div class="hindi-card swiper-slide">
+            <div class="hindi__image">
+              <img src="https://a10.gaanacdn.com/gn_img/song/z8k3yd1Krx/k3y4gl50Kr/size_m_1658037089.webp">
+              <div class="play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            <h5>Kesariya</h5>
+            <p>10-05-2021</p>
+          </div>
+
+          <div class="hindi-card swiper-slide">
+            <div class="hindi__image">
+              <img src="https://a10.gaanacdn.com/gn_img/song/Bp1bAynb02/1bADxownW0/size_m_1543830076.webp">
+              <div class="play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            <h5>Mujhe kaise pata na chala</h5>
+            <p>10-05-2021</p>
+          </div>
+
+
+          <div class="hindi-card swiper-slide">
+            <div class="hindi__image">
+              <img src="https://a10.gaanacdn.com/gn_img/albums/4Z9bqo3yQn/9bqgDyrX3y/size_m.jpg">
+              <div class="play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            <h5>Saawriya</h5>
+            <p>10-05-2021</p>
+          </div>
+
+          <div class="hindi-card swiper-slide">
+            <div class="hindi__image">
+              <img src="https://a10.gaanacdn.com/gn_img/song/XYybzNrb2g/ybzEg61rW2/size_m_1628084846.webp">
+              <div class="play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            <h5>Ranjha</h5>
+            <p>10-05-2021</p>
+          </div>
+
+          <div class="hindi-card swiper-slide">
+            <div class="hindi__image">
+              <img src="https://a10.gaanacdn.com/gn_img/albums/2lV3dl13Rg/V3dldLBE3R/size_m.webp">
+              <div class="play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            <h5>Mimi</h5>
+            <p>10-05-2021</p>
+          </div>
+
+          <div class="hindi-card swiper-slide">
+            <div class="hindi__image">
+              <img src="https://a10.gaanacdn.com/gn_img/song/21GWwR3pkg/GWwBLwrD3p/size_m_1629370808.webp">
+              <div class="play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            <h5>Kabhi Tumhe</h5>
+            <p></p>
+          </div>
+
+          <div class="hindi-card swiper-slide">
+            <div class="hindi__image">
+              <img src="https://a10.gaanacdn.com/gn_img/song/4Z9bqo3yQn/9bqje5jXKy/size_m_1614769974.webp">
+              <div class="play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            <h5>Nadiyaan Paar</h5>
+            <p>10-05-2021</p>
+          </div>
+
+          <div class="hindi-card swiper-slide">
+            <div class="hindi__image">
+              <img src="https://a10.gaanacdn.com/gn_img/albums/NOXWVgbkqL/OXWV9maw3k/size_m_1605809194.webp">
+              <div class="play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            <h5>Tu Mera Nahin</h5>
+            <p>10-05-2021</p>
+          </div>
+
+          <div class="hindi-card swiper-slide">
+            <div class="hindi__image">
+              <img src="https://a10.gaanacdn.com/gn_img/albums/4Z9bqgo3yQ/Z9bqAEQeby/size_m_1605590246.webp">
+              <div class="play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            <h5>Bahot Roye</h5>
+            <p>10-05-2021</p>
+          </div>
+
+          <div class="hindi-card swiper-slide">
+            <div class="hindi__image">
+              <img src="https://a10.gaanacdn.com/gn_img/song/R7vKXr6Wmr/vKX0vyJxKm/size_m_1614145756.webp">
+              <div class="play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            <h5>Panghat</h5>
+            <p>10-05-2021</p>
+          </div>
+
+          <div class="hindi-card swiper-slide">
+            <div class="hindi__image">
+              <img src="https://a10.gaanacdn.com/gn_img/albums/YoEWlwa3zX/EWlwxGar3z/size_m.webp">
+              <div class="play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            <h5>Bad Girl x Bad Boy</h5>
+            <p>10-05-2021</p>
+          </div>
+
+          <div class="hindi-card swiper-slide">
+            <div class="hindi__image">
+              <img src="https://a10.gaanacdn.com/gn_img/albums/kGxbn03y4r/xbnwoZNqKy/size_m_1644336742.webp">
+              <div class="play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            <h5>Ek tu hi to hai</h5>
+            <p>10-05-2021</p>
+          </div>
+
+          <div class="hindi-card swiper-slide">
+            <div class="hindi__image">
+              <img src="https://a10.gaanacdn.com/gn_img/albums/g4w3vr3jJB/w3vwep1pWj/size_m.webp">
+              <div class="play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            <h5>Jannat Ve</h5>
+            <p>10-05-2021</p>
+          </div>
+
+          <div class="hindi-card swiper-slide">
+            <div class="hindi__image">
+              <img src="https://a10.gaanacdn.com/gn_img/albums/10q3Zj1352/q3ZR6q4035/size_m_1629048201.webp">
+              <div class="play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            <h5>Shershaa</h5>
+            <p>10-05-2021</p>
+          </div>
+
+          <div class="hindi-card swiper-slide">
+            <div class="hindi__image">
+              <img src="https://a10.gaanacdn.com/gn_img/albums/Oxd3xzPbgV/d3xzD8wDbg/size_m.webp">
+              <div class="play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            <h5>Fly</h5>
+            <p>10-05-2021</p>
+          </div>
+
+          <div class="hindi-card swiper-slide">
+            <div class="hindi__image">
+              <img src="https://a10.gaanacdn.com/gn_img/albums/g4w3vwrWjJ/w3vwJPXoWj/size_m.webp">
+              <div class="play__icon">
+                <i class="uil uil-play"></i>
+              </div>
+            </div>
+            <h5>Kaise Judaa rahein</h5>
+            <p>10-05-2021</p>
+          </div>
+
+          
+      
+        </div>
+
+      </div>
+
+    </main>
+
+    <aside class="main__right queue">
+      <div class="queue__headings">
+        <h2>Queue</h2>
+
+        <select name="queue__options" id="queue__options" class="btn btn-primary">
+          <option value="volvo" class="queue__option">Volvo</option>
+          <option value="saab" class="queue__option">Saab</option>
+          <option value="mercedes" class="queue__option">Mercedes</option>
+          <option value="audi" class="queue__option">Audi</option>
+        </select>
+      </div>
+      <ol class="queue__songs scroll__hide">
+
+        <article class="queue__song">
+          <p class="num">1</p>
+          <div class="queue__image">
+            <img src="https://a10.gaanacdn.com/gn_img/albums/10q3ZR1352/0q3ZoNg0W5/size_m.webp">
+          </div>
+          <div class="queue__song-info">
+            <h4>Sugar & Brownies</h4>
+            <p>Sugar & Brownies</p>
+          </div>
+          <div class="song__favorite">
+            <i class="uil uil-heart"></i>
+          </div>
+        </article>
+
+
+        <article class="queue__song">
+          <p class="num">2</p>
+          <div class="queue__image">
+            <img src="https://a10.gaanacdn.com/gn_img/albums/zLp36PvbrG/Lp36pPr8br/size_m.webp" alt="song image">
+          </div>
+          <div class="queue__song-info">
+            <h4>Bad Boy</h4>
+            <p>Luana Kiara</p>
+          </div>
+          <div class="song__favorite">
+            <i class="uil uil-heart"></i>
+          </div>
+        </article>
+
+        <article class="queue__song">
+          <p class="num">3</p>
+          <div class="queue__image">
+            <img src="https://a10.gaanacdn.com/gn_img/albums/g4w3vwrWjJ/w3vwBQePWj/size_m.webp" alt="song image">
+          </div>
+          <div class="queue__song-info">
+            <h4>Women</h4>
+            <p>Planet Her</p>
+          </div>
+          <div class="song__favorite">
+            <i class="uil uil-heart"></i>
+          </div>
+        </article>
+
+        <article class="queue__song">
+          <p class="num">4</p>
+          <div class="queue__image">
+            <img src="https://a10.gaanacdn.com/gn_img/albums/10q3Zj1352/0q3Z0d9Mb5/size_m.webp" alt="song image">
+          </div>
+          <div class="queue__song-info">
+            <h4>Dance Monkey</h4>
+            <p>Dance Monkey</p>
+          </div>
+          <div class="song__favorite">
+            <i class="uil uil-heart"></i>
+          </div>
+        </article>
+
+        <article class="queue__song">
+          <p class="num">5</p>
+          <div class="queue__image">
+            <img src="https://a10.gaanacdn.com/gn_img/albums/R7vKXr6Wmr/7vKXa45x3m/size_m.webp" alt="song image">
+          </div>
+          <div class="queue__song-info">
+            <h4>No Life</h4>
+            <p>Dua Lipa</p>
+          </div>
+          <div class="song__favorite">
+            <i class="uil uil-heart"></i>
+          </div>
+        </article>
+
+        <article class="queue__song">
+          <p class="num">6</p>
+          <div class="queue__image">
+            <img src="https://a10.gaanacdn.com/gn_img/albums/MmqK5EKwRO/mqK597RmKw/size_m.webp" alt="song image">
+          </div>
+          <div class="queue__song-info">
+            <h4>Rockstar</h4>
+            <p>Rockstar</p>
+          </div>
+          <div class="song__favorite">
+            <i class="uil uil-heart"></i>
+          </div>
+        </article>
+
+        <article class="queue__song">
+          <p class="num">7</p>
+          <div class="queue__image">
+            <img src="https://a10.gaanacdn.com/gn_img/albums/10q3ZR1352/0q3ZoNg0W5/size_m.webp">
+          </div>
+          <div class="queue__song-info">
+            <h4>Sugar & Brownies</h4>
+            <p>Sugar & Brownies</p>
+          </div>
+          <div class="song__favorite">
+            <i class="uil uil-heart"></i>
+          </div>
+        </article>
+
+
+        <article class="queue__song">
+          <p class="num">8</p>
+          <div class="queue__image">
+            <img src="https://a10.gaanacdn.com/gn_img/albums/zLp36PvbrG/Lp36pPr8br/size_m.webp" alt="song image">
+          </div>
+          <div class="queue__song-info">
+            <h4>Bad Boy</h4>
+            <p>Luana Kiara</p>
+          </div>
+          <div class="song__favorite">
+            <i class="uil uil-heart"></i>
+          </div>
+        </article>
+
+        <article class="queue__song">
+          <p class="num">9</p>
+          <div class="queue__image">
+            <img src="https://a10.gaanacdn.com/gn_img/albums/g4w3vwrWjJ/w3vwBQePWj/size_m.webp" alt="song image">
+          </div>
+          <div class="queue__song-info">
+            <h4>Women</h4>
+            <p>Planet Her</p>
+          </div>
+          <div class="song__favorite">
+            <i class="uil uil-heart"></i>
+          </div>
+        </article>
+
+        <article class="queue__song">
+          <p class="num">10</p>
+          <div class="queue__image">
+            <img src="https://a10.gaanacdn.com/gn_img/albums/10q3Zj1352/0q3Z0d9Mb5/size_m.webp" alt="song image">
+          </div>
+          <div class="queue__song-info">
+            <h4>Dance Monkey</h4>
+            <p>Dance Monkey</p>
+          </div>
+          <div class="song__favorite">
+            <i class="uil uil-heart"></i>
+          </div>
+        </article>
+
+        <article class="queue__song">
+          <p class="num">11</p>
+          <div class="queue__image">
+            <img src="https://a10.gaanacdn.com/gn_img/albums/R7vKXr6Wmr/7vKXa45x3m/size_m.webp" alt="song image">
+          </div>
+          <div class="queue__song-info">
+            <h4>No Life</h4>
+            <p>Dua Lipa</p>
+          </div>
+          <div class="song__favorite">
+            <i class="uil uil-heart"></i>
+          </div>
+        </article>
+
+        <article class="queue__song">
+          <p class="num">12</p>
+          <div class="queue__image">
+            <img src="https://a10.gaanacdn.com/gn_img/albums/MmqK5EKwRO/mqK597RmKw/size_m.webp" alt="song image">
+          </div>
+          <div class="queue__song-info">
+            <h4>Rockstar</h4>
+            <p>Rockstar</p>
+          </div>
+          <div class="song__favorite">
+            <i class="uil uil-heart"></i>
+          </div>
+        </article>
+
+        <article class="queue__song">
+          <p class="num">13</p>
+          <div class="queue__image">
+            <img src="https://a10.gaanacdn.com/gn_img/albums/10q3ZR1352/0q3ZoNg0W5/size_m.webp">
+          </div>
+          <div class="queue__song-info">
+            <h4>Sugar & Brownies</h4>
+            <p>Sugar & Brownies</p>
+          </div>
+          <div class="song__favorite">
+            <i class="uil uil-heart"></i>
+          </div>
+        </article>
+
+
+        <article class="queue__song">
+          <p class="num">14</p>
+          <div class="queue__image">
+            <img src="https://a10.gaanacdn.com/gn_img/albums/zLp36PvbrG/Lp36pPr8br/size_m.webp" alt="song image">
+          </div>
+          <div class="queue__song-info">
+            <h4>Bad Boy</h4>
+            <p>Luana Kiara</p>
+          </div>
+          <div class="song__favorite">
+            <i class="uil uil-heart"></i>
+          </div>
+        </article>
+
+        <article class="queue__song">
+          <p class="num">15</p>
+          <div class="queue__image">
+            <img src="https://a10.gaanacdn.com/gn_img/albums/g4w3vwrWjJ/w3vwBQePWj/size_m.webp" alt="song image">
+          </div>
+          <div class="queue__song-info">
+            <h4>Women</h4>
+            <p>Planet Her</p>
+          </div>
+          <div class="song__favorite">
+            <i class="uil uil-heart"></i>
+          </div>
+        </article>
+
+        <article class="queue__song">
+          <p class="num">16</p>
+          <div class="queue__image">
+            <img src="https://a10.gaanacdn.com/gn_img/albums/10q3Zj1352/0q3Z0d9Mb5/size_m.webp" alt="song image">
+          </div>
+          <div class="queue__song-info">
+            <h4>Dance Monkey</h4>
+            <p>Dance Monkey</p>
+          </div>
+          <div class="song__favorite">
+            <i class="uil uil-heart"></i>
+          </div>
+        </article>
+
+        <article class="queue__song">
+          <p class="num">17</p>
+          <div class="queue__image">
+            <img src="https://a10.gaanacdn.com/gn_img/albums/R7vKXr6Wmr/7vKXa45x3m/size_m.webp" alt="song image">
+          </div>
+          <div class="queue__song-info">
+            <h4>No Life</h4>
+            <p>Dua Lipa</p>
+          </div>
+          <div class="song__favorite">
+            <i class="uil uil-heart"></i>
+          </div>
+        </article>
+
+        <article class="queue__song">
+          <p class="num">18</p>
+          <div class="queue__image">
+            <img src="https://a10.gaanacdn.com/gn_img/albums/MmqK5EKwRO/mqK597RmKw/size_m.webp" alt="song image">
+          </div>
+          <div class="queue__song-info">
+            <h4>Rockstar</h4>
+            <p>Rockstar</p>
+          </div>
+          <div class="song__favorite">
+            <i class="uil uil-heart"></i>
+          </div>
+        </article>
+
+        <article class="queue__song">
+          <p class="num">19</p>
+          <div class="queue__image">
+            <img src="https://a10.gaanacdn.com/gn_img/albums/10q3ZR1352/0q3ZoNg0W5/size_m.webp">
+          </div>
+          <div class="queue__song-info">
+            <h4>Sugar & Brownies</h4>
+            <p>Sugar & Brownies</p>
+          </div>
+          <div class="song__favorite">
+            <i class="uil uil-heart"></i>
+          </div>
+        </article>
+
+
+        <article class="queue__song">
+          <p class="num">20</p>
+          <div class="queue__image">
+            <img src="https://a10.gaanacdn.com/gn_img/albums/zLp36PvbrG/Lp36pPr8br/size_m.webp" alt="song image">
+          </div>
+          <div class="queue__song-info">
+            <h4>Bad Boy</h4>
+            <p>Luana Kiara</p>
+          </div>
+          <div class="song__favorite">
+            <i class="uil uil-heart"></i>
+          </div>
+        </article>
+
+        <article class="queue__song">
+          <p class="num">21</p>
+          <div class="queue__image">
+            <img src="https://a10.gaanacdn.com/gn_img/albums/g4w3vwrWjJ/w3vwBQePWj/size_m.webp" alt="song image">
+          </div>
+          <div class="queue__song-info">
+            <h4>Women</h4>
+            <p>Planet Her</p>
+          </div>
+          <div class="song__favorite">
+            <i class="uil uil-heart"></i>
+          </div>
+        </article>
+
+        <article class="queue__song">
+          <p class="num">22</p>
+          <div class="queue__image">
+            <img src="https://a10.gaanacdn.com/gn_img/albums/10q3Zj1352/0q3Z0d9Mb5/size_m.webp" alt="song image">
+          </div>
+          <div class="queue__song-info">
+            <h4>Dance Monkey</h4>
+            <p>Dance Monkey</p>
+          </div>
+          <div class="song__favorite">
+            <i class="uil uil-heart"></i>
+          </div>
+        </article>
+
+        <article class="queue__song">
+          <p class="num">23</p>
+          <div class="queue__image">
+            <img src="https://a10.gaanacdn.com/gn_img/albums/R7vKXr6Wmr/7vKXa45x3m/size_m.webp" alt="song image">
+          </div>
+          <div class="queue__song-info">
+            <h4>No Life</h4>
+            <p>Dua Lipa</p>
+          </div>
+          <div class="song__favorite">
+            <i class="uil uil-heart"></i>
+          </div>
+        </article>
+
+        <article class="queue__song">
+          <p class="num">24</p>
+          <div class="queue__image">
+            <img src="https://a10.gaanacdn.com/gn_img/albums/MmqK5EKwRO/mqK597RmKw/size_m.webp" alt="song image">
+          </div>
+          <div class="queue__song-info">
+            <h4>Rockstar</h4>
+            <p>Rockstar</p>
+          </div>
+          <div class="song__favorite">
+            <i class="uil uil-heart"></i>
+          </div>
+        </article>
+      </ol>
+
+
+    </aside>
+
+    <footer class="player">
+      
+      <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+      
+      <div class="icons">
+        <!-- fontawesome icons -->
+        <i class="fas fa-2x fa-step-backward" id="previous"></i>
+        <i class="far fa-2x fa-play-circle" id="masterPlay"></i>
+        <i class="fas fa-2x fa-step-forward" id="next"></i>
+      </div>
+
+      <div class="songInfo">
+        <span id="masterSongName">Warriyo - Mortals [NCS
+          Release]</span>
+      </div>
+      
+    </footer>
+  </section>
+  <!-- Main Ends -->
+
+  
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Font-awesome Js -->
+  <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+
+  <!-- Custom Js -->
   <script src="script.js"></script>
+
+</body>
+
+
+
 </html>
